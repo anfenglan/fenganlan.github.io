@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>职场通用技能课程体系-网易云音乐</title>
+		<style type="text/css">
+			* {
+			    margin: 0px;
+			    padding: 0px;
+			}
+			
+			ul {
+			    list-style: none;
+			}
+			
+			/*清除浮动*/
+			.clearfix:after {
+			    visibility: hidden;
+			    clear: both;
+			    display: block;
+			    content: ".";
+			    height: 0;
+			}
+			
+			.clearfix {
+			    *zoom: 1;
+			}
+			
+			.clear {
+			    clear: both;
+			}
+			
+			/*浮动公共类*/
+			.fl {
+			    float: left;
+			}
+			
+			.fr {
+			    float: right;
+			}
+			
+			
+			.w {
+			    width: 1205px;
+			    margin: 0 auto;
+			    position: relative;
+			}
+			
+			
+			input,
+			h1,
+			a {
+			    text-decoration: none;
+			}
+			
+			a {
+			    color: #343d42;
+			}
+			
+			a:hover {
+			    color: #49af4f;
+			    z-index: 99;
+			}
+			
+			/*设置无边框下划线*/
+			input,
+			button {
+			    border: 0;
+			    outline: none;
+			}
+			
+			/* 头部---------------------- */
+			.header {
+			    width: 100%;
+			    height: 60px;
+			    background-color: #343d42;
+				
+			}
+			
+			.header .logo img {
+			    width: 170px;
+			    height: 29px;
+			    margin-top: 15px;
+			}
+			
+			.header .w>span {
+			    cursor: pointer;
+			    float: left;
+			    color: #eee;
+			    font-size: 16px;
+			    line-height: 60px;
+			    margin-right: 24px;
+			}
+			
+			/* 课堂 */
+			.header .course {
+			    position: relative;
+			    margin-left: 20px;
+			}
+			
+			.header .course .course1 {
+			    display: none;
+			    width: 105px;
+			    position: absolute;
+			    background-color: #fff;
+			    line-height: 40px;
+			    color: #666;
+			    left: -10px;
+			    margin-top: -10px;
+			    border: .5px solid #f0f0f0;
+			}
+			
+			.header .course .course1 li {
+			    margin-left: 10px;
+			}
+			
+			/* 福利 */
+			.header .welfare {
+			    position: relative;
+			}
+			
+			.header .welfare .ewm {
+			    width: 240px;
+			    height: 240px;
+			    font-size: 14px;
+			    color: #333;
+			    line-height: 30px;
+			    text-align: center;
+			    border: .5px solid #f0f0f0;
+			    position: absolute;
+			    left: -80px;
+			}
+			
+			.header .welfare .ewm img {
+			    width: 145px;
+			    height: 145px;
+			    margin-top: 15px;
+			}
+			
+			.header .welfare .ewm p {
+			    font-size: 12px;
+			    color: #666;
+			    height: 26px;
+			    line-height: 26px;
+			}
+			
+			/* 搜索 */
+			.header .search {
+			    margin: 10px 6px 0 140px;
+			    background-color: #444;
+			    border-right: none;
+			    border-radius: 20px;
+			    width: 303px;
+			    height: 40px;
+			    float: left;
+			}
+			
+			.header .search div {
+			    position: relative;
+			    font-size: 14px;
+			    height: 100%;
+			    line-height: 40px;
+			    margin-left: 15px;
+			    float: left;
+			    cursor: pointer;
+			    color: #fff;
+			}
+			
+			.header .search input {
+			    width: 160px;
+			    height: 40px;
+			    font-size: 14px;
+			    margin-left: 10px;
+			    float: left;
+			    color: #aaa;
+			    background-color: #444;
+			}
+			
+			.header .search span {
+			    display: block;
+			    width: 60px;
+			    height: 41px;
+			    border-top-right-radius: 20px;
+			    border-bottom-right-radius: 20px;
+			    cursor: pointer;
+			    right: 0;
+			    top: -2px;
+			    font-size: 14px;
+			    background: #49af4f;
+			    color: #fff;
+			    line-height: 38px;
+			    z-index: 2;
+			    float: right;
+			    text-align: center;
+			}
+			
+			.header .search div ul {
+			    display: none;
+			    position: absolute;
+			    left: -15px;
+			    top: 43px;
+			}
+			
+			.header .search div ul li {
+			    width: 58px;
+			    background-color: #fff;
+			    color: #666;
+			    text-align: center;
+			}
+			
+			/* 登录 */
+			.header .login {
+			    font-size: 14px;
+			    height: 32px;
+			    float: right;
+			    margin-top: 16px;
+			    color: #fff;
+			}
+			
+			.header .login a,
+			.header .login i {
+			    margin-right: 15px;
+			    color: #fff;
+			}
+			
+			.header .login a:hover {
+			    color: #49af4f;
+			    ;
+			}
+			
+			.header .login a:last-child {
+			    margin-right: 0px;
+			    z-index: 99;
+			}
+			
+			.header .login img {
+			    border-radius: 15px;
+			    vertical-align: middle;
+			}
+			
+			.midd {
+			    background-position: center top;
+			    background-repeat: no-repeat;
+			    background-color: #f5f5f5;
+			    min-height: 860px;
+			}
+			/*.ux-cms-category-label{
+				position:absolute*/
+			}
+		    .ux-cms-category-label{
+		    	width:120px;
+		    	height: 32px;
+		    	line height: 32px;
+		    	background-color: green;
+		    	border-radius: 17px
+		    	text-align:center;
+		    	color: white;
+		    	position:absolute
+		    }
+		    .g-flow{
+		    	width:1205px;
+		    	margin: 0 auto;
+		    	text-align: left;
+		    }
+		    .f-pt{
+		    	padding-left: 0px;
+		    	min-height: 782px;
+		    	width: 1205px;
+		    	padding-top: 3px;
+		    }
+			
+			.f-ib{
+				display:inline-block;
+				zoom: 1;
+			}
+			.ux-cms-category-label-0{
+				top: 352px;
+				left: 77px;
+			}
+			footer {
+                overflow: hidden;
+                background-color: #474443;
+                
+            }	
+		</style>
+	</head>
+	<body>
+		<div class="header">
+		    <div class="w">
+		        
+		        <div class="logo fl">
+		            <img src="img/1.png" alt="">
+		        </div>
+		    
+		        <span class="course">课程分类 
+		            <div class="course1">
+		                <ul>
+		                    <li><a href="">职场提升</a></li>
+		                    <li><a href="">编程开发</a></li>
+		                    <li><a href="">AI/数据科学</a></li>
+		                    <li><a href="">产品与运营</a></li>
+		                    <li><a href="">设计创意</a></li>
+		                    <li><a href="">电商运营</a></li>
+		                    <li><a href="">语言学习</a></li>
+		                    <li><a href="">职业考试</a></li>
+		                    <li><a href="">生活兴趣</a></li>
+		                </ul>
+		            </div>
+		        </span>
+		        <span>微专业</span>
+		        <span class="welfare">关注领福利
+		            <div class="ewm">
+		                <h5>关注云课堂微信公众号</h5>
+		                <p>-领取课程免费福利，超值学习资料-</p>
+		                <img src="img/2.jpg" alt="">
+		            </div>
+		        </span>
+		        <div class="search">
+		            <div>课程 
+		                <ul>
+		                    <li>课程</li>
+		                    <li>网校</li>
+		                </ul>
+		            </div>
+		            <input type="text" placeholder="Python数据分析师的高薪秘籍">
+		          <!--  <span>搜索</span>-->
+		        </div>
+		
+		        
+		        <div class="login">
+		            <a href="#">我的学习</a>
+		            <i>丨</i>
+		            <i>丨</i>
+		            <a href="#">登录/注册</a>
+		            <img src="img/login.jpg" alt="">
+		        </div>
+		      
+		
+		
+		    </div>
+		
+		</div>
+		<section>
+		<div class="midd" style="display: block; background-image: url(img/bg.webp);">
+			<div class="g-flow f-pr">
+				<div class="f-pr">
+				<a href="" class="f-ib ux-cms-category-label ux-cms-category-label-0" target="_blank">
+	 				<div class=" f-pt f-pr">PPT</div>
+				</a>
+			</div>
+			</div>
+			
+			
+		</section>
+	</body>
+</html>	
+				
+			
+        <footer>
+        <div class="w">
+            <!-- 左部分 -->
+            <div class="footl fl">
+                <p>网易云课堂 是网易公司（163.com）旗下专注职业技能提升的在线学习平台。</p>
+                <a href="">关于我们</a>
+                <a href="">联系我们</a>
+                <a href="">帮助中心</a>
+                <a href="">中国大学MOOC</a>
+                <a href="">网易卡搭编程</a>
+                <a href="">极客战记</a>
+                <div>©1997-2020 网易公司 版权所有 &nbsp;&nbsp;粤B2-20090191-18 &nbsp;&nbsp;工业和信息化部备案管站</div>
+            </div>
+            <!-- 右部分 -->
+            <div class="footr fr">
+                <div class="footrt">
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+                <div class="footrb">
+                    <p class="fl">关注我们：</p>
+                    <img src="img/footer3.png" alt="">
+                    <img src="img/footer3.png" alt="">
+                </div>
+            </div>
+        </div>
+        </footer>		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!--</div>
+			<div><a href="PPT"></a></div>
+			<div><a href="EXCEL"></a></div>
+			<div><a href="效率工具"></a></div>
+			<div><a href="电脑基础"></a></div>
+			<div><a href="更多办公软件"></a></div>
+			<div><a href="学习能力"></a></div>
+			<div><a href="思维能力"></a></div>
+			<div><a href="表达能力"></a></div>
+			<div><a href="自我管理"></a></div>
+			<div><a href="人脉管理"></a></div>
+			<div><a href="职场效能"></a></div>
+			<div><a href="职场人际"></a></div>
+			<div><a href="向上管理"></a></div>
+			<div><a href="跨界转型"></a></div>
+			<div><a href="管理能力"></a></div>
+			<div><a href="商业通识"></a></div>
+			<div><a href="商业经典"></a></div>
+			<div><a href="商业实战"></a></div>-->
+			
+			<!--<ul>
+				<li>PPT</li>
+				<li>EXCEL</li>
+				<li>效率工具</li>
+				<li>电脑基础</li>
+				<li>更多办公软件</li>
+			</ul>
+			</div>
+			<div>
+			<ul>
+				<li>学习能力</li>
+				<li>思维能力</li>
+				<li>表达能力</li>
+				<li>自我管理</li>
+				<li>人脉管理</li>
+			</ul>
+			</div>
+			<div>
+			<ul>
+				<li>职场效能</li>
+				<li>职场人际</li>
+				<li>向上管理</li>
+				<li>跨界转型</li>
+			</ul>
+		    </div>
+			<div>
+		    <ul>
+				<li>管理能力</li>
+				<li>商业通识</li>
+				<li>商业经典</li>
+				<li>商业实战</li>
+
+			</ul>
+			</div>-->
+		
